@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello this is sumant </h1>
-    <h2>Thsi is my first website hosted through github pages</h2>
-</body>
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body>
+    <section class="main-page">
+      <nav class="navbar"> <!-- symantic tag , purpose is to provide navigational links-->
+        <div id="logo">
+          K
+        </div>
+        <div id="navlinks">
+        <ul>
+          <li class="nav-btn"><a href="">Home</a></li>
+          <li class="nav-btn"><a href="about.html">About</a></li>
+          <li class="nav-btn"><a href="contact.html" target="_blank">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+       <div class="main"> 
+        <div class="container">
+  
+          <h1 id="form-heading"> This is a sample form</h1>
+
+          <div class="form">
+            <form action="je.php" method="get">
+              <div class="form-box">
+              <label id="f-n" for="name">First Name</label>
+              <input id="e-f-n" type="text" name="efn" />
+            </div>
+            <div class="form-box">
+              <label id="l-n" for="name">Last Name</label>
+              <input id="e-l-n" type="text" name="eln" />
+            </div>
+            <div class="form-box">
+              <label id="num" for="name">Phone number</label>
+              <input id="e-p-n" type="number" name="epn" />
+            </div>
+            
+            <div class="form-box">
+              <label for="country">Country :</label>
+              <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+            
+            <div class="form-box">
+              <label for="address">Address</label>
+              <textarea id="address" placeholder="Address"></textarea>
+            </div>
+            <div class="form-box">
+              <label for="res">Resume</label>
+              <input type="file" id="res" name="res" />
+            </div>
+
+            <div class="radio-btn">
+              
+              <p>Favourite Language</p>
+              <div class="radio-box">
+                <div>
+              <input type="radio" id="html" name="fav_lang" value="html" />
+              <label for="html">HTML</label>
+            </div>
+            <div>
+              <input type="radio" id="css" name="fav_lang" value="css" />
+              <label for="css">CSS</label>
+            </div>
+            <div>
+              <input type="radio" id="js" name="fav_lang" value="js" />
+              <label for="js">Javascript</label>
+            </div>
+            </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+  </body>
 </html>
+
